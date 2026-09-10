@@ -1,0 +1,16 @@
+sources:
+  - name: src
+    database: sourcedb
+    schema: mkmall
+    tables:
+      - name: regions
+      - name: nations
+      - name: customers
+      - name: lineitems
+      - name: suppliers
+      - name: orders
+        config:
+          freshness:
+            warn_after: {count: 152, period: day}
+            error_after: {count: 153, period: day}
+          loaded_at_field: o_orderdate::timestamp_ntz
