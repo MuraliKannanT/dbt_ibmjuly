@@ -4,9 +4,11 @@ sources:
     schema: mkmall
     tables:
       - name: regions
+        description: Raw data for region information
       - name: nations
       - name: customers
       - name: lineitems
+        description: Raw data for the line items for each order
       - name: suppliers
       - name: orders
         config:
