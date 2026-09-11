@@ -6,6 +6,11 @@ sources:
       - name: regions
         description: Raw data for region information
       - name: nations
+        columns:
+          - name: n_nationkey
+            data_tests:
+              - unique
+              - not_null  
       - name: customers
       - name: lineitems
         description: Raw data for the line items for each order

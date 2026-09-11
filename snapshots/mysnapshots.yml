@@ -2,7 +2,7 @@ snapshots:
  - name: orders_snapshot
    relation: ref('int_orders')
    config:
-     unique_key: order_id
+     unique_key: ORDER_ID
      strategy: timestamp
      updated_at: order_date
   
